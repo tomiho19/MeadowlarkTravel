@@ -6,11 +6,30 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Meadowlark Travel</title>
+    {{#if showTests}}
+            <link rel="stylesheet" href="/vendor/mocha.css">
+    {{/if}}
+    <script src="//code.jquery.com/jquery-2.0.2.min.js"></script>
 </head>
 <body>
 <header>
     <img src="/img/logo.jpg" alt="" height=25% width=100%>
 </header>
 {{{body}}}
+{{#if showTests}}
+    <div id="mocha"></div>
+        <script src="/vendor/mocha.js"></script>
+        <script src="/vendor/chai.js"></script>
+        <script>
+            mocha.ui('tdd');
+            const assert = chai.assert;
+
+        </script>
+        <script src="/vendor/ga/test_home.js"></script>
+        <script>mocha.run();</script>
+    {{#if pageTestScript}}
+        <script src="{{pageTestScript}}"></script>
+    {{/if}}
+{{/if}}
 </body>
 </html>

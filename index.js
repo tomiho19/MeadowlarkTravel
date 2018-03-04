@@ -1,6 +1,7 @@
 let express = require('express');
 let app = express();
 let handlebars = require('express-handlebars').create({defaultLayout: 'main'});
+let fortune = require('./lib/fortune');
 
 app.engine('handlebars', handlebars.engine);
 app.set('view engine', 'handlebars');
@@ -11,21 +12,20 @@ app.listen(app.get('port'), ()=>{
     console.log('Server\'s running on http://localhost:' + app.get('port') + ' press Ctrl + C to exit');
 });
 
+app.use((req, res, next)=>{
+    res.locals.showTests = app.get('env') !== 'production' && req.query.test === '1';
+    next();
+});
+
 app.get('/', (req, res)=>{
     res.render('home');
 });
-//////////////////////////////////////////////////////////////
-let fortunes = [
-    "Победи свои страхи, или они победят тебя.",
-    "Рекам нужны истоки.",
-    "Не бойся неведомого.",
-    "Тебя ждет приятный сюрприз.",
-    "Будь проще везде, где только можно.",
-];
-//////////////////////////////////////////////////////////////
+
 app.get('/about', (req, res)=>{
-    let randomFortune = fortunes[Math.floor(Math.random() * fortunes.length)];
-    res.render('about', {fortune: randomFortune});
+    res.render('about', {
+        fortune: fortune.getFortune(),
+        pageTestScript: '/vendor/ga/test_about.js'
+    });
 });
 
 app.use((req, res, next)=>{
