@@ -1,0 +1,14 @@
+<div class="weatherWidget">
+    {{#each partials.weatherContext.locations}}
+        <div class="location">
+            <h3>{{name}}</h3>
+            <a href="{{foreacastUrl}}">
+                <img src="{{iconUrl}}" alt="{{weather}}">
+                {{weather}}, {{temp}}
+            </a>
+        </div>
+    {{/each}}
+    <smal>
+        Source: <a href="http://www.wunderground.com">Weather Underground</a>
+    </smal>
+</div>

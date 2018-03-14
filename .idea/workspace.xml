@@ -2,6 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="249c0ac6-b8eb-48a5-b4b1-2d0f564d5fd0" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLinters/jshint.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLinters/jslint.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Gruntfile.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/lib/fortune.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/lib/getWeather.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/qa/tests-crosspage.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/qa/tests-unit.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/views/jquery-test.handlebars" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/views/partials/news.handlebars" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/views/partials/weather.handlebars" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/views/tours/hood-river.handlebars" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/views/tours/oregon-coast.handlebars" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/views/tours/request-group-rate.handlebars" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -76,7 +91,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="about.handlebars" pinned="false" current-in-tab="false">
+      <file leaf-file-name="about.handlebars" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/about.handlebars">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
@@ -86,7 +101,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.handlebars" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.handlebars" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/layouts/main.handlebars">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
@@ -337,15 +352,21 @@
       <option name="project" value="LOCAL" />
       <updated>1520191464261</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="tests with Mocha">
+      <created>1521039097430</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1521039097430</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40903000" />
+    <option name="totallyTimeSpent" value="41018000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-1" width="1366" height="768" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1727672" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -354,9 +375,9 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32718894" sideWeight="0.5043924" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32872504" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32718894" sideWeight="0.4956076" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32718894" sideWeight="0.4956076" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.48079878" sideWeight="0.49707174" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.48079878" sideWeight="0.49707174" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -715,14 +736,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/about.handlebars">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="10" lean-forward="true" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/partials/weather.handlebars">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -743,6 +756,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" column="17" lean-forward="false" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/about.handlebars">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="10" lean-forward="true" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
           <folding />
         </state>
       </provider>
