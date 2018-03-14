@@ -29,8 +29,18 @@
     "babel-preset-env": "^1.6.1",
     "babel-register": "^6.26.0",
     "chai": "^4.1.2",
-    "express-handlebars": "^3.0.0",
-    "mocha": "^5.0.1",
-    "webpack": "^4.1.0"
+    "grunt": "^0.4.5",
+    "grunt-cafe-mocha": "^0.1.12",
+    "grunt-contrib-cssmin": "^0.10.0",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-less": "^0.11.3",
+    "grunt-contrib-uglify": "^0.5.1",
+    "grunt-exec": "^0.4.5",
+    "grunt-hashres": "^0.4.1",
+    "grunt-lint-pattern": "^0.1.4",
+    "linkchecker": "^1.1.0",
+    "mocha": "~1.20.1",
+    "restler": "^3.2.2",
+    "zombie": "^5.0.8"
   }
 }

@@ -1,7 +1,17 @@
 let express = require('express');
 let app = express();
-let handlebars = require('express-handlebars').create({defaultLayout: 'main'});
+let handlebars = require('express-handlebars').create({
+    defaultLayout: 'main',
+    helpers:{
+        section: function (name, options) {
+            if(!this._sections) this._sections = {};
+            this._sections[name] = options.fn(this);
+            return null
+        }
+    }
+});
 let fortune = require('./lib/fortune');
+let weatherData = require('./lib/getWeather');
 
 app.engine('handlebars', handlebars.engine);
 app.set('view engine', 'handlebars');
@@ -17,6 +27,12 @@ app.use((req, res, next)=>{
     next();
 });
 
+app.use((req, res, next)=>{
+   if(!res.locals.partials) res.locals.partials = {};
+   res.locals.partials.weatherContext = weatherData.getWeatherData();
+   next();
+});
+
 app.get('/', (req, res)=>{
     res.render('home');
 });
@@ -26,6 +42,22 @@ app.get('/about', (req, res)=>{
         fortune: fortune.getFortune(),
         pageTestScript: '/vendor/ga/test_about.js'
     });
+});
+
+app.use('/tours/hood-river', (req, res)=>{
+    res.render('tours/hood-river');
+});
+
+app.use('/tours/oregon-coast', (req, res)=>{
+    res.render('tours/oregon-coast')
+});
+
+app.use('/tours/request-group-rate', (req, res)=>{
+    res.render('tours/request-group-rate');
+});
+
+app.use('/test', (req, res)=>{
+   res.render('jquery-test')
 });
 
 app.use((req, res, next)=>{
